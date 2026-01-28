@@ -179,20 +179,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Project Inquiry"
-                required
-              />
-            </div>
-
+            
             <div className="form-group">
               <label htmlFor="message">Message</label>
               <textarea
@@ -200,7 +187,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Tell me about your project..."
+                placeholder="Write your message here..."
                 rows="5"
                 required
               />
