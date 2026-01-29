@@ -62,7 +62,7 @@ const About = () => {
     : allSkills.filter(s => s.category === activeCategory)
 
   const services = [
-    { icon: FiCloud, title: 'Cloud Infrastructure', description: 'Architecting and managing scalable cloud environments on AWS.' },
+    { icon: FiCloud, title: 'Cloud Infrastructure', description: 'Engineering and managing scalable cloud environments on AWS.' },
     { icon: FiTerminal, title: 'Infrastructure as Code', description: 'Automating infrastructure provisioning with Terraform and Ansible.' },
     { icon: FiServer, title: 'CI/CD Automation', description: 'Building robust pipelines with Jenkins and GitHub Actions.' },
     { icon: SiDocker, title: 'Containerization', description: 'Orchestrating containerized applications using Docker and Kubernetes.' },
