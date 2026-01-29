@@ -141,7 +141,7 @@ const Hero = () => {
 
           <p className="hero-description">
             Bridging the gap between development and operations.
-            Expert in <span className="highlight">Cloud Infrastructure</span>, <span className="highlight">CI/CD</span>, and <span className="highlight">Automation</span>.
+            Expert in <span className="highlight">CI/CD</span>, and <span className="highlight">Automation</span>, and <span className="highlight">Container Orchestration</span>.
           </p>
 
           <div className="hero-buttons">
