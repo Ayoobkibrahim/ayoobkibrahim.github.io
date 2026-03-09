@@ -25,7 +25,7 @@ const Hero = () => {
   ]
 
   const resumeLink =
-    'https://drive.google.com/uc?export=download&id=1hIX_FvBF5MRsanKHTkSDrC-rgt1O7-Dt'
+    '/Ayoob Devops Resume.pdf'
 
   const handleCommand = (cmd) => {
     const trimmedCmd = cmd.trim().toLowerCase()
