@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
-import { FiGithub, FiLinkedin, FiMail, FiTerminal } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiTerminal, FiDownload } from 'react-icons/fi'
 import { FaXTwitter, FaMedium } from 'react-icons/fa6'
 import { TypeAnimation } from 'react-type-animation'
 import './Hero.css'
@@ -20,8 +20,12 @@ const Hero = () => {
     { cmd: 'about', desc: 'View professional summary' },
     { cmd: 'skills', desc: 'List technical skills' },
     { cmd: 'contact', desc: 'Get contact info' },
+    { cmd: 'resume', desc: 'Download resume' },
     { cmd: 'clear', desc: 'Clear terminal' },
   ]
+
+  const resumeLink =
+    'https://drive.google.com/uc?export=download&id=1hIX_FvBF5MRsanKHTkSDrC-rgt1O7-Dt'
 
   const handleCommand = (cmd) => {
     const trimmedCmd = cmd.trim().toLowerCase()
@@ -53,6 +57,12 @@ const Hero = () => {
         break
       case 'contact':
         response = [{ type: 'output', text: 'Email: ayoobkibrahim01@gmail.com' }]
+        break
+      case 'resume':
+        window.open(resumeLink, '_blank')
+        response = [
+          { type: 'output', text: 'Downloading resume...' },
+        ]
         break
       case 'uname -a':
         response = [{ type: 'output', text: 'Linux devops-lab 5.10.0-8-amd64 #1 SMP Debian 5.10.46-4 x86_64 GNU/Linux' }]
@@ -150,6 +160,9 @@ const Hero = () => {
             </a>
             <a href="#contact" className="btn-outline">
               Contact Me
+            </a>
+            <a href={resumeLink} className="btn-outline">
+              <FiDownload /> Download Resume
             </a>
           </div>
 

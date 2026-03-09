@@ -162,20 +162,35 @@
   font-weight: 600;
 }
 
+
 /* Buttons */
 .hero-buttons {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
-.btn-primary {
-  padding: 0.75rem 2rem;
-  background: var(--text-primary);
-  color: var(--primary-bg);
+/* Base button style (applies to all hero buttons) */
+.hero-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 46px;
+  padding: 0 1.8rem;
   border-radius: 6px;
   font-weight: 600;
-  transition: transform 0.2s;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 180px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--text-primary);
+  color: var(--primary-bg);
   border: none;
 }
 
@@ -185,20 +200,18 @@
   color: #0f172a;
 }
 
+/* Outline Button */
 .btn-outline {
-  padding: 0.75rem 2rem;
   background: transparent;
   color: var(--text-primary);
   border: 1px solid var(--glass-border);
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.2s;
 }
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.05);
   border-color: var(--text-primary);
 }
+
 
 /* Socials */
 .hero-socials {
