@@ -19,13 +19,13 @@ const About = () => {
 
   // User's Skills Data with Categories
   const allSkills = [
-    // { name: 'AWS', category: 'Cloud', level: 75, icon: SiAmazonwebservices, color: '#FF9900' },
+    { name: 'AWS', category: 'Cloud', level: 75, icon: SiAmazonwebservices, color: '#FF9900' },
 
-    // { name: 'Terraform', category: 'IaC', level: 70, icon: SiTerraform, color: '#7B42BC' },
+    { name: 'Terraform', category: 'IaC', level: 70, icon: SiTerraform, color: '#7B42BC' },
     { name: 'Ansible', category: 'Configuration Management', level: 70, icon: SiAnsible, color: '#EE0000' },
 
     { name: 'Kubernetes', category: 'Container Orchestration', level: 85, icon: SiKubernetes, color: '#326CE5' },
-    { name: 'Helm', category: 'Container Orchestration', level: 75, icon: SiHelm, color: '#F46800' },
+    { name: 'Helm', category: 'Container Orchestration', level: 75, icon: SiHelm, color: '#009bf4' },
 
     { name: 'Docker', category: 'Containerization', level: 90, icon: SiDocker, color: '#2496ED' },
 
@@ -50,9 +50,10 @@ const About = () => {
 
     { name: 'Istio', category: 'Container Orchestration', level: 70, icon: SiIstio, color: '#466BB0' },
 
-    { name: 'SonarQube', category: 'Security', level: 75, icon: SiSonarqube, color: '#F46800' },
+    { name: 'SonarQube', category: 'Security', level: 75, icon: SiSonarqube, color: '#00dcf4' },
 
-    { name: 'Nginx', category: 'Gateway', level: 75, icon: SiNginx, color: '#F46800' },
+    { name: 'Nginx', category: 'Gateway', level: 75, icon: SiNginx, color: '#00f408' },
+
   ]
 
   const categories = ['All', ...new Set(allSkills.map(s => s.category))]
