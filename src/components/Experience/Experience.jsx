@@ -6,6 +6,39 @@ const Experience = ({ isInView }) => {
   const experiences = [
     {
       id: 1,
+      role: 'DevOps Engineer Intern',
+      company: 'Kubenine',
+      location: 'Remote',
+      period: 'Mar 2026 - Present',
+      duration: '',
+      description: 'Working as a DevOps Engineer Intern, gaining hands-on experience in cloud infrastructure, containerization,',
+      details: [
+        // 'Assisting in managing and maintaining Kubernetes clusters for production workloads.',
+        // 'Working with CI/CD pipelines to automate build, test, and deployment processes.',
+        // 'Collaborating with the team on infrastructure-as-code practices and cloud deployments.',
+      ],
+      skills: ['Docker', 'Terraform', 'Cloud'],
+      current: true,
+    },
+    {
+      id: 2,
+      role: 'Aspiring DevOps Engineer',
+      company: 'Brototype',
+      location: 'Calicut',
+      period: 'May 2025 - Mar 2026',
+      duration: '10 mos',
+      description: 'Intensively trained in DevOps methodologies, tools, and best practices through a structured bootcamp program.',
+      details: [
+        'Learned and practised core DevOps tools including Docker, Kubernetes, Jenkins, and Terraform.',
+        'Gained hands-on experience with Linux administration, networking, and shell scripting.',
+        'Built and deployed containerised applications, worked with CI/CD pipelines and cloud platforms.',
+        'Collaborated on real-world projects to understand end-to-end software delivery workflows.',
+      ],
+      skills: ['Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Linux', 'AWS'],
+      current: false,
+    },
+    {
+      id: 3,
       role: 'Software Developer',
       company: 'ChargeMOD (BPM Power Pvt Ltd)',
       location: 'Trivandrum',
@@ -22,7 +55,7 @@ const Experience = ({ isInView }) => {
       current: false,
     },
     {
-      id: 2,
+      id: 4,
       role: 'Flutter Developer Intern',
       company: 'Luminar Techno Lab',
       location: 'Kochi',
