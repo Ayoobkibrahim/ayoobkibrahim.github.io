@@ -13,11 +13,12 @@ const Experience = ({ isInView }) => {
       duration: '',
       description: 'Working as a DevOps Engineer Intern, gaining hands-on experience in cloud infrastructure, containerization,',
       details: [
-        // 'Assisting in managing and maintaining Kubernetes clusters for production workloads.',
-        // 'Working with CI/CD pipelines to automate build, test, and deployment processes.',
-        // 'Collaborating with the team on infrastructure-as-code practices and cloud deployments.',
+        'Working with AWS services such as VPC, EKS ,ECS, ECR, IAM, EC2, S3, and CloudWatch to build and manage cloud infrastructure.',
+        'Deploying and managing containerized applications on Kubernetes using Helm.',
+        'Working with CI/CD pipelines to automate build, test, and deployment processes.',
+        'Collaborating with the team on infrastructure-as-code practices and cloud deployments.',
       ],
-      skills: ['Docker', 'Terraform', 'Cloud'],
+      skills: ['Docker', 'Terraform', 'AWS','Kubernetes','Grafana','Prometheus','Loki','Kyverno','Helm','Github Actions'],
       current: true,
     },
     {
@@ -34,7 +35,7 @@ const Experience = ({ isInView }) => {
         'Built and deployed containerised applications, worked with CI/CD pipelines and cloud platforms.',
         'Collaborated on real-world projects to understand end-to-end software delivery workflows.',
       ],
-      skills: ['Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Linux', 'AWS'],
+      skills: ['Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Linux', 'AWS','Prometheus','Grafana','ArgoCD','Helm','Kustomize','Ansible','Azure Devops','Github Actions','Istio','Python'],
       current: false,
     },
     {
